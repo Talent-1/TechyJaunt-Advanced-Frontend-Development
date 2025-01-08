@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header> 
+            <nav> 
+            <ul> 
+            <li><a href="#home">Home</a></li> 
+            <li><a href="#signUp">Sign Up</a></li> 
+            <li><a href="#logIn">Log In</a></li> 
+            <li><a href="#contact">Contact</a></li> 
+            <li><a href="#about">About</a></li> 
+        </ul> 
+        </nav> 
+        </header>
+        <main>
+    <section>
+       
+            <div class="formField">
+                <h2>Sign up</h2>
+                <p>Please fill the field below accurately!</p>
+                <section class="form-container">
+                    <form method="post">
+                        <div class="username">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" placeholder="Enter Your Username" required>
+                        <span class="errorMessage" id="userNameError"></span>
+                        </div>
+
+                        <div class="email">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="example123@email.com" required>
+                        </div>
+                        <div>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="password" required>
+                        <span class="errorMessage" id="passwordError"></span>
+                            </div>
+                        <input type="submit" value="Submit" id="submit">
+                    </form>
+                </section>
+                
+            </div>
+       
+    </section>
+    </main>
+</div>
+<script src="myapp.js"></script>
+</body>
+</html>
