@@ -22,7 +22,7 @@ if (username < 3) {
 }
 
 // validate email
-const emailPattern = /^(\w[2,50])@{a-z}[2, 20]\.{a-z}[2,8] /gi;
+const emailPattern = /^(\w[2,50])@{a-z}[2, 20]\.{a-z}[2,8]/gi;
 // example_.123@email.com
 if (email != emailPattern) {
     valid = false;
