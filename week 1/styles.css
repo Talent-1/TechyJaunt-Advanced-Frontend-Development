@@ -1,148 +1,234 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-main {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2{
-    color: #333;
-    margin-left: 40px;
-    
-}
-
-p {
-    line-height: 1.6;
-    color: #666;
-}
-
-
-
-
-form input[type="text"],
-form input[type="email"],
-form input[type="password"] {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    display: block;
-}
-
-form input[type="submit"] {
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-form input[type="submit"]:hover {
-    background-color: #555;
-}
-
-/*header styles */
-header {
-    background-color: #333;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: #555;
-    border-radius: 5px;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-.form-container {
+    background-color: #f0f2f5;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f4f4f4;
 }
 
-form {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.container {
+    background-color: white;
     border-radius: 10px;
-    width: 100%;
-    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 900px;
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
 }
 
-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-form input[type="text"],
-form input[type="email"],
-form input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #333;
+.left {
+    background-color: #ff7a7a;
     color: white;
+    padding: 40px;
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.left p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.right {
+    padding: 40px;
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    background-color: #3b5998;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #38cc8b;
+    color: white;
+    padding: 12px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    width: 100%;
+    font-weight: bold;
 }
 
-form input[type="submit"]:hover {
-    background-color: #555;
+form button:hover {
+    background-color: #32b379;
 }
+
+.terms {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8em;
+    color: gray;
+}
+
+.terms a {
+    color: #3b5998;
+    text-decoration: none;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .left,
+    .right {
+        flex-basis: auto;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .left h1 {
+        font-size: 1.7rem;
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 900px;
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+}
+
+.left {
+    background-color: #ff7a7a;
+    color: white;
+    padding: 40px;
+    width: 55%; /* Use width for desktop layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.left p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.right {
+    padding: 40px;
+    width: 45%; /* Use width for desktop layout */
+    display: flex;
+    flex-direction: column;
+}
+
+/* ... (rest of the styles for .banner, form, .terms remain the same) */
+.banner {
+    background-color: #3b5998;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #38cc8b;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #32b379;
+}
+
+.terms {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8em;
+    color: gray;
+}
+
+.terms a {
+    color: #3b5998;
+    text-decoration: none;
+}
+
 .errorMessage{
+    display: none;
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 10px;
-    font-weight: 100;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: none;
     border-radius: 10px;
-    color: red;
-    display: none;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .left,
+    .right {
+        width: 100%; /* Full width on mobile */
+        padding: 20px;
+    }
+
+    .left h1 {
+        font-size: 1.7rem;
+    }
 }
