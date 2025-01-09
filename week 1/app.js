@@ -1,6 +1,15 @@
+const signupForm = document.getElementById('signupForm');
+//error elements
+const userNameError = document.getElementById('usernameError');
+const emailError = document.getElementById('emailError');
+const passwordError = document.getElementById('passwordError');
 
+// handle form submit
 signupForm.addEventListener('submit', (e) => {
-   //get the input elements
+//prevent the default submit behavior
+e.preventDefault();
+
+   //get form field elements values
 const userName = document.getElementById('username').value;
 const email = document.getElementById('email').value;
 const password = document.getElementById('password').value;
@@ -15,7 +24,7 @@ let valid = true;
 
 //validate username
 //username must be up to three characters
-if (username < 3) {
+if (userName.length < 3) {
     valid = false;
     userName.textContent = 'username must have at least three charcters';
     userNameError.style.display = 'block';
