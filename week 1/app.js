@@ -26,14 +26,14 @@ let valid = true;
 //username must be up to three characters
 if (userName.length < 3) {
     valid = false;
-    userName.textContent = 'username must have at least three charcters';
+    userNameError.textContent = 'username must have at least three characters';
     userNameError.style.display = 'block';
 }
 
 // validate email
-const emailPattern = /^(\w[2,50])@{a-z}[2, 20]\.{a-z}[2,8]/gi;
+const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-z]{2,}$/i;
 // example_.123@email.com
-if (email != emailPattern) {
+if (!email.match( emailPattern)) {
     valid = false;
     emailError.textContent = 'Please enter a valid email';
     emailError.style.display = 'block';
@@ -42,7 +42,7 @@ if (email != emailPattern) {
 //validate password
 if (password.length < 6) {
     valid = false;
-    emailError.textContent = 'Password must be upto 6 character long and must contain one Uppercase, a number and a special character';
-    emailError.style.display = 'block';
+    passwordError.textContent = 'Password must be upto 6 character long and must contain one Uppercase, a number and a special character';
+    passwordError.style.display = 'block';
 }
 })
