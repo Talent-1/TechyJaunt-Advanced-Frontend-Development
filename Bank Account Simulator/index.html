@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Bank Account</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="bank_logo.png" alt="Bank Logo"> <span>Apex Bank</span>
+        </div>
+        <h1>Account Dashboard</h1>
+    </header>
+
+    <main>
+        <div class="account-info">
+            <h2 id="account-holder"></h2>
+            <p id="account-balance"></p>
+        </div>
+
+        <div class="transaction-form">
+            <h2>Transactions</h2>
+            <label for="transaction-type">Transaction Type:</label>
+            <select id="transaction-type">
+                <option value="deposit">Deposit</option>
+                <option value="withdrawal">Withdrawal</option>
+            </select><br><br>
+
+            <label for="transaction-amount">Amount:</label>
+            <input type="number" id="transaction-amount"><br><br>
+
+            <button id="make-transaction">Make Transaction</button>
+        </div>
+
+        <div class="transaction-history">
+            <h2>Transaction History</h2>
+            <ul id="transaction-list">
+                </ul>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
